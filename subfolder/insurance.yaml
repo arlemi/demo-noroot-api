@@ -29,12 +29,6 @@ paths:
                   value:
                     claimId: CLAIM-123
           description: Returned if claim has been successfully registered
-        500:
-          description: Unexpected error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
       operationId: register
       summary: Register insurance claim
   /claim:
